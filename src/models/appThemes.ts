@@ -16,7 +16,7 @@ export interface AppThemeOption {
   mode: AppThemeMode;
 }
 
-export const DEFAULT_APP_THEME: AppThemeId = 'paper-light';
+export const DEFAULT_APP_THEME: AppThemeId = 'ink-dark';
 
 export const APP_THEMES: AppThemeOption[] = [
   { id: 'paper-light', label: 'Paper Light', mode: 'light' },
