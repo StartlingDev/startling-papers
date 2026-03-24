@@ -43,23 +43,6 @@ Open the local Vite URL in your browser.
 - `npm run test` starts Vitest in watch mode
 - `npm run test:run` runs the test suite once
 
-## GitHub Pages
-
-This repository is already configured for GitHub Pages deployment with:
-
-- a Vite `base` of `/startling-papers/` in [vite.config.ts](/Users/nutch/dev/codex/startling-papers/vite.config.ts)
-- a GitHub Actions workflow in [.github/workflows/deploy.yml](/Users/nutch/dev/codex/startling-papers/.github/workflows/deploy.yml)
-
-To publish it:
-
-1. Create or connect the GitHub repository named `startling-papers`.
-2. Push this project to the `main` branch.
-3. In GitHub, open `Settings > Pages`.
-4. Set the source to `GitHub Actions`.
-5. Push future changes to `main` and GitHub Pages will redeploy automatically.
-
-If the repository name changes, update the `base` value in [vite.config.ts](/Users/nutch/dev/codex/startling-papers/vite.config.ts) to match the new repo path.
-
 ## Architecture
 
 The app keeps all layout math in millimeters internally, even when the UI is working in centimeters or inches. That makes the preview pipeline, renderer logic, and exports deterministic.
@@ -72,48 +55,6 @@ The app keeps all layout math in millimeters internally, even when the UI is wor
 4. Reserve optional heading/title space.
 5. Render the selected pattern into an SVG clipped to the printable region.
 6. Reuse the same SVG for preview and export.
-
-### Project structure
-
-```text
-src/
-  components/
-    AppHeader.vue
-    ControlsPanel.vue
-    ExportButtons.vue
-    FormField.vue
-    PaperPreview.vue
-  composables/
-    useExport.ts
-    usePaperConfig.ts
-    usePaperRenderer.ts
-  models/
-    gridTypes.ts
-    paperConfig.ts
-    paperFormats.ts
-    units.ts
-  renderers/
-    index.ts
-    renderDiamondDotGrid.ts
-    renderDotGrid.ts
-    renderDotHelpers.ts
-    renderGraphPaper.ts
-    renderGuideDotGrid.ts
-    renderHexGrid.ts
-    renderHorizontalLines.ts
-    renderIsometricDotGrid.ts
-    renderIsometricGrid.ts
-    renderPseudoIsometricGrid.ts
-    renderRhombusGrid.ts
-    renderSquareGrid.ts
-    renderStaggeredDotGrid.ts
-    renderTriangleGrid.ts
-  utils/
-    downloadHelpers.ts
-    geometry.ts
-    svgHelpers.ts
-    unitConversion.ts
-```
 
 ### Notes
 
