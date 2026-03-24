@@ -2,6 +2,8 @@
 
 A polished Vue 3 + TypeScript + Vite web app for generating printable paper layouts with a live SVG preview and downloadable PDF/PNG exports.
 
+[View App](https://startlingdev.github.io/startling-papers)
+
 ## Features
 
 - Live SVG preview that preserves the selected page proportions
