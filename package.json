@@ -1,0 +1,43 @@
+{
+  "name": "printable-paper-studio",
+  "author": {
+    "name": "Nicholas Hutchind",
+    "email": "nicholas@hutchind.com"
+  },
+  "version": "1.0.0",
+  "private": true,
+  "description": "A printable paper generator built with Vue and Vite for creating dot grids, graph paper, ruled paper, and other exportable page layouts.",
+  "license": "MIT",
+  "keywords": [
+    "printable-paper",
+    "paper-generator",
+    "dot-grid",
+    "graph-paper",
+    "vue",
+    "vite",
+    "svg",
+    "pdf-export",
+    "png-export",
+    "stationery"
+  ],
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "dependencies": {
+    "pdf-lib": "^1.17.1",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "^5.7.3",
+    "vite": "^5.4.14",
+    "vitest": "^2.1.8",
+    "vue-tsc": "^2.1.10"
+  }
+}
