@@ -89,4 +89,4 @@ npm run test:run
 
 ## License
 
-MIT. See [LICENSE](/Users/nutch/dev/codex/startling-papers/LICENSE).
+MIT. See [LICENSE](https://github.com/StartlingDev/startling-papers/blob/main/LICENSE).
